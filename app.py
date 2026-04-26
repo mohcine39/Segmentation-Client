@@ -703,7 +703,7 @@ Cluster {i} - {cluster_names[i]}:
 ========================================
 PERFORMANCES DES MODÈLES
 ========================================
-- Régression Linéaire (R²): 0.0000
+- Régression Linéaire (R2): 0.0000
 - Régression Logistique: 77.0%
 - Random Forest: 78.7%
 - Score de silhouette: 0.1452
