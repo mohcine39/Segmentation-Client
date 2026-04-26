@@ -692,10 +692,10 @@ SEGMENTS IDENTIFIÉS
         for i in range(4):
             rapport += f"""
 Cluster {i} - {cluster_names[i]}:
-  - Effectif: {stats_clusters[i]['effectif']:.0f} clients ({stats_clusters[i]['pourcentage']:.1f}%)
-  - Âge moyen: {stats_clusters[i]['age']:.0f} ans
-  - Revenu moyen: {stats_clusters[i]['revenu']:.0f} k$
-  - Score moyen: {stats_clusters[i]['score']:.0f}
+  - Effectif: {int(stats_clusters[i]['effectif'])} clients ({round(stats_clusters[i]['pourcentage'], 1)}%)
+  - Âge moyen: {int(stats_clusters[i]['age'])} ans
+  - Revenu moyen: {int(stats_clusters[i]['revenu'])} k$
+  - Score moyen: {int(stats_clusters[i]['score'])}
   - Stratégie: {cluster_strategies[i]['strategie']}
 """
         
