@@ -606,8 +606,6 @@ elif menu == "ℹ️ À propos":
     
     with col1:
         st.markdown("""
-    with col1:
-        st.markdown("""
         ### 📊 Projet de Segmentation
         **Titre :** Segmentation Clientèle par Clustering
         **Auteur :** Mohcine Sassioui
