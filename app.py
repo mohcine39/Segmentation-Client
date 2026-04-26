@@ -15,8 +15,8 @@ warnings.filterwarnings('ignore')
 # 1. CONFIGURATION DE LA PAGE
 # ==========================================
 st.set_page_config(
-    page_title="PFE - Segmentation Client | EST Fès",
-    page_icon="🎓",
+    page_title="Segmentation Client | Mohcine Sassioui",
+    page_icon="📊",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -144,7 +144,7 @@ cluster_strategies = {
 # ==========================================
 # 3. SIDEBAR
 # ==========================================
-st.sidebar.markdown("### 🎓 EST Fès")
+st.sidebar.markdown("### 📊 Mohcine Sassioui")
 st.sidebar.markdown("---")
 
 theme = st.sidebar.selectbox("🎨 Thème", ["Clair", "Sombre"])
@@ -169,12 +169,9 @@ menu = st.sidebar.radio(
 
 st.sidebar.markdown("---")
 st.sidebar.info(
-    "**Auteurs :**\n"
-    "- Hatim LAHMAR\n"
-    "- Moumen YOUSSEF\n\n"
-    "**Encadrant :**\n"
-    "- Pr. Faiq GMIRA\n\n"
-    "**Filière :** Ingénierie des Données"
+    "**Auteur :**\n"
+    "- Mohcine Sassioui\n\n"
+    "**Projet :** Segmentation Clientèle"
 )
 
 # ==========================================
@@ -185,7 +182,7 @@ if menu == "🏠 Accueil":
     <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 20px; margin-bottom: 2rem;">
         <h1 style="color: white;">📊 Segmentation Clientèle</h1>
         <p style="color: white; font-size: 1.2rem;">Par l'intelligence artificielle et le Machine Learning</p>
-        <p style="color: white;">Projet de Fin d'Études - EST Fès</p>
+        <p style="color: white;">Mohcine Sassioui - Portfolio Data Scientist</p>
     </div>
     """, unsafe_allow_html=True)
     
@@ -609,21 +606,18 @@ elif menu == "ℹ️ À propos":
     
     with col1:
         st.markdown("""
-        ### 🎓 Projet de Fin d'Études
+    with col1:
+        st.markdown("""
+        ### 📊 Projet de Segmentation
         **Titre :** Segmentation Clientèle par Clustering
-        **Établissement :** EST Fès
-        **Filière :** Ingénierie des Données
+        **Auteur :** Mohcine Sassioui
         **Année :** 2026
         """)
     
     with col2:
         st.markdown("""
-        ### 👥 Équipe
-        | Rôle | Nom |
-        |------|-----|
-        | **Auteur** | Hatim LAHMAR |
-        | **Auteur** | Moumen YOUSSEF |
-        | **Encadrant** | Pr. Faiq GMIRA |
+        ### 💼 Contexte
+        Analyse approfondie pour optimiser les stratégies marketing et le ciblage client.
         """)
     
     st.markdown("---")
@@ -655,7 +649,7 @@ elif menu == "ℹ️ À propos":
     - **Gain : +1.7 points** par rapport à la régression logistique
     """)
     
-    st.info("Le code source complet est disponible sur GitHub : [Segmentation-Client-PFE](https://github.com/youssefmn06/Segmentation-Client-PFE)")
+
 
 # ==========================================
 # PAGE 11 : EXPORT
@@ -738,6 +732,6 @@ PERFORMANCES DES MODÈLES
 # ==========================================
 st.markdown("""
 <div class="footer">
-    <p>Projet de Fin d'Études - EST Fès | Segmentation Clientèle par Clustering | 2026</p>
+    <p>Mohcine Sassioui | Segmentation Clientèle par Clustering | 2026</p>
 </div>
 """, unsafe_allow_html=True)
